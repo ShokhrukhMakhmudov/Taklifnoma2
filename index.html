@@ -126,7 +126,7 @@
       }
 
       .element {
-        width: 100%;
+        width: 90%;
         max-width: 500px;
         position: absolute;
         animation: fadeIn 1.5s ease-in;
@@ -138,6 +138,7 @@
         transform: rotateY(180deg);
       }
       .element-2 {
+        width: 80%;
         bottom: 0;
         left: 0;
         animation-delay: 0.2s;
@@ -277,10 +278,6 @@
 
           music.play();
           music.volume = 0.5;
-          music.onended = function () {
-            music.currentTime = 0;
-            music.play();
-          };
         },
         { once: true }
       );
