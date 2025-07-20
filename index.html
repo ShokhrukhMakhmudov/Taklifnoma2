@@ -5,245 +5,7 @@
     <title>Jamshidbek & Muxtasarxon</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-      @font-face {
-        font-family: "Holiday";
-        src: url("fonts/bickham-script-three.woff") format("woff2");
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: "Cargo", serif;
-        background: #eaf1f7;
-        color: #2f3b5c;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        overflow-x: hidden;
-      }
-
-      .invitation {
-        margin-top: -50px;
-        position: relative;
-        width: 90%;
-        background: white;
-        max-width: 600px;
-        border: 10px solid #eaf1f7;
-        padding: 30px 30px 40px;
-        text-align: center;
-        position: relative;
-        /* Фоновая PNG-рамка */
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-        animation: fadeIn 1.5s ease-in;
-      }
-
-      .fade-up {
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeUp 1s ease-out forwards;
-      }
-
-      .pulse {
-        animation: pulse 1s linear infinite;
-      }
-
-      .fade-up:nth-child(1) {
-        animation-delay: 0.2s;
-      }
-      .fade-up:nth-child(2) {
-        animation-delay: 0.5s;
-      }
-      .fade-up:nth-child(3) {
-        animation-delay: 0.8s;
-      }
-
-      .small-text {
-        font-size: 1.1rem;
-        color: #5c6a82;
-        font-style: italic;
-        margin-bottom: 40px;
-      }
-
-      .names {
-        font-family: "Holiday", cursive;
-        font-size: 3rem;
-        color: #2f3b5c;
-        line-height: 70px;
-        margin-bottom: 10px;
-      }
-
-      .ampersand {
-        color: #c28c7c;
-        font-size: 2.5rem;
-        font-family: "Holiday", cursive;
-      }
-
-      .date {
-        font-size: 1.5rem;
-        letter-spacing: 4px;
-        margin: 25px 0;
-        color: #2f3b5c;
-      }
-
-      .location {
-        margin-top: 15px;
-      }
-
-      .location h3 {
-        font-size: 1.4rem;
-        margin-bottom: 5px;
-        color: #2f3b5c;
-      }
-      .pulse-slow {
-        animation: pulse 3s ease-in-out infinite;
-      }
-
-      .float {
-        animation: float 6s ease-in-out infinite;
-      }
-
-      .bounce-soft {
-        animation: bounceSoft 4s ease-in-out infinite;
-      }
-      .location p {
-        font-size: 1rem;
-        color: #444;
-      }
-
-      .footer-note {
-        margin-top: 30px;
-        font-style: italic;
-        font-size: 0.95rem;
-        color: #5c6a82;
-      }
-
-      .element {
-        width: 90%;
-        max-width: 500px;
-        position: fixed;
-        animation: fadeIn 1.5s ease-in;
-      }
-      .element-1 {
-        top: 0;
-        right: 0;
-        animation-delay: 0.2s;
-        transform: rotateY(180deg);
-      }
-      .element-2 {
-        width: 80%;
-        bottom: 0;
-        left: 0;
-        animation-delay: 0.2s;
-        transform: rotateX(180deg);
-      }
-
-      .event-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin: 20px 0;
-        font-size: 1.2rem;
-        color: #2f3b5c;
-      }
-
-      .event-info .icon {
-        font-size: 1.4rem;
-      }
-
-      .event-info .date-text {
-        font-weight: bold;
-      }
-
-      .event-info .label {
-        font-style: italic;
-        color: #c28c7c;
-      }
-
-      .event-info .time {
-        font-weight: bold;
-      }
-      .location {
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeUp 1.8s ease-out forwards;
-        font-style: italic;
-        color: #2f3b5c;
-      }
-      @keyframes fadeUp {
-        0% {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-      @keyframes pulse {
-        50% {
-          opacity: 1;
-        }
-      }
-      @media screen and (max-width: 575px) {
-        .names {
-          display: flex;
-          flex-direction: column;
-          gap: 0px;
-          line-height: 25px;
-        }
-      }
-
-      @keyframes pulse {
-        0%,
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
-        50% {
-          transform: scale(1.02);
-          opacity: 0.9;
-        }
-      }
-
-      @keyframes float {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
-      }
-
-      @keyframes bounceSoft {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(5px);
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="invitation pulse-slow">
@@ -257,6 +19,75 @@
         <span>Muxtasarxon</span>
       </div>
 
+      <div class="scroll-section fade-up">
+        <p class="scroll-text">Azizlarimiz, qadrdonlarimiz!</p>
+        <p class="scroll-text">
+          Hayotimizdagi eng muhim voqea — To‘yimizga sizni katta mamnuniyat
+          bilan taklif qilamiz!
+        </p>
+        <p class="scroll-text">
+          Har bir insonning orzusi — yuragining ikkinchi bo‘lagini topishdir.
+        </p>
+        <p class="scroll-text">Qachon va qayerda — bu muhim emas.</p>
+        <p class="scroll-text">
+          Taxtir bitimimizga ko‘ra biz bir-birimizni uchratdik va o‘z baxtimizni
+          topdik. Endi esa bu baxtni siz bilan bo‘lishmoqchimiz!
+        </p>
+        <p class="scroll-text">
+          Sizni biz bilan birgalikda quvonch, baxt, kulgu, zavq va raqs
+          dunyosiga sho‘ng‘ishga taklif qilamiz.
+        </p>
+      </div>
+      <div class="calendar-container fade-up">
+        <div class="calendar">
+          <div class="calendar-header">
+            <div>Du</div>
+            <div>Se</div>
+            <div>Ch</div>
+            <div>Pa</div>
+            <div>Ju</div>
+            <div>Sh</div>
+            <div>Ya</div>
+          </div>
+          <div class="calendar-days">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="bold">1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div class="bold">8</div>
+            <div class="heart">9</div>
+            <div class="heart">10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div class="bold">15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div class="bold">22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div>28</div>
+            <div class="bold">29</div>
+            <div class="bold">30</div>
+            <div>31</div>
+          </div>
+        </div>
+      </div>
       <div class="event-info fade-up">
         <span class="label">9 avgust</span>
         <span class="label">· Qiz bazmi · 14:00</span>
